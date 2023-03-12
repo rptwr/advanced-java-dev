@@ -8,7 +8,7 @@ public class MicroServicesApp2Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MicroServicesApp2Application.class, args);
-		System.out.println("MicroServicesApp2Application started...");
+		System.out.println("MicroServicesApp2Application started..");
 	}
 
 }

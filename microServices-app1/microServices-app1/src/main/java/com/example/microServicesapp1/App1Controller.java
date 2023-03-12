@@ -14,7 +14,7 @@ public class App1Controller {
 		RestTemplate restTemplate = new RestTemplate();
 		ResponseEntity<String> responseEntity = restTemplate.getForEntity("http://localhost:9092/app2Service", 
 																			String.class);   // by using restTemplate giving call to getForEntity and specifying the
-																				// the target service URL to which service we are making call & second argument is return type of API
+																				// target service URL to which service we are making call & second argument is return type of API
 		String response = responseEntity.getBody();  // get the body content from responseEntity
 		return "success from app1 - service ===> " + response;
 	}   
