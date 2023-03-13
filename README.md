@@ -21,3 +21,5 @@ This repository is for Java Enterprise Edition concepts.
 
 1.microServices-app1    --->  Basics-Rest Template
 2.microServices-app2    --->  Basics-Rest Template
+3.microServices-app3-OpenFeign    --->  client app -- Feign client with example
+4.microServices-app3-server    --->  server app -- Feign client with example
