@@ -1,6 +1,6 @@
 # advanced-java-dev
 This repository is for Java Enterprise Edition concepts.
-=================================================================================================
+===================================================
 ## webservices ##
 
 1.webServices-app1    --->   first-spring-boot
@@ -8,7 +8,7 @@ This repository is for Java Enterprise Edition concepts.
 
 
 
-=================================================================================================
+====================================================
 ## Spring Data JPA ##
 1. jpa-app1   ---> Setup
 2. jpa-app2   ---> Save Operation, Save All Operation
@@ -18,7 +18,7 @@ This repository is for Java Enterprise Edition concepts.
 
 
 
-=================================================================================================
+====================================================
 ## Spring Microservices
 
 1.microServices-app1    --->  Basics-Rest Template
