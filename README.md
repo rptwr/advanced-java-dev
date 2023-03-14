@@ -10,6 +10,8 @@ This repository is for Java Enterprise Edition concepts.
 
 =================================================================================================
 ## Spring Data JPA ##
+1. jpa-app1   ---> Setup
+2. jpa-app2   ---> Save Operation, Save All Operation
 
 
 
