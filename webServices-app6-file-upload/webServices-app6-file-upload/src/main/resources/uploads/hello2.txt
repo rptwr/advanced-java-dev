@@ -1,0 +1,25 @@
+section1	:	print, literals, variables, identifiers and keywords
+section2	:	operators
+section3	:	if, else, elif, ternary and switch-cases
+section4	:	loops
+section5	:	list
+section6	:	tuple
+section7	:	set
+section8	:	dictionary
+section9	:	functions
+section10	:	filter, map and reduce
+section11	:	modules and packages
+section12	:	Basics of Logical coding
+section13	:	class and object (Encapsulation)
+section14	:	Inheritance
+section15	:	abstraction and polymorphism
+section16	:	garbage collection
+section17	:	exception handling
+section18	:	File handling
+section19	:	decorators
+section20	:	generators
+section21	:	inner classes
+section22	:	strings
+section23	:	regex
+section24	:	multi threading
+section25	:	Display Patterns
