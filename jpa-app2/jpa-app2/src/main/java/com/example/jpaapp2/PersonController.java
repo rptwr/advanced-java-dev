@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PersonController {
 	
+	// framework only providing value to PersonRepository because of autowired // we dont require to develop subclass to the interface 
+	// creating an object to subclass automatically we will be getting object from the framework
+	// framework will take care of developing a subclass to person repository interface creating an object assigning that object to our attribute 
+	// just because of autowired.
+	
 	@Autowired   // object type will be automatically wiring by the framework
 	private PersonRepository personRepository; // now we can use method from PersonRepository
 	
