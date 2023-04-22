@@ -1,4 +1,4 @@
-package com.in28minutes.udemy2spring;
+package helloworld;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -46,28 +46,30 @@ public class HelloWorldConfiguration {
 	public Person person2MethodCall() {
 		return new Person(name(), age(), address()); //name, age		
 	}
-
+	
+	// instead of calling address() method We can take a bean which is managed by spring
+	// take those beans and inject / auto-wire them in 
 	@Bean
 	public Person person3Parameters(String name, int age, Address address3) {
 		//name,age,address2
 		return new Person(name, age, address3); //name, age		
 	}  // instead of calling method directly we are calling parameter
 
-//	@Bean
-//	@Primary
-//	//No qualifying bean of type 'com.in28minutes.learnspringframework.Address' 
-//	//available: expected single matching bean but found 2: address2,address3
-//	public Person person4Parameters(String name, int age, Address address) {
-//		//name,age,address2
-//		return new Person(name, age, address); //name, age		
-//	}
-//
-//	@Bean
-//	public Person person5Qualifier(String name, int age, @Qualifier("address3qualifier") Address address) {
-//		//name,age,address2
-//		return new Person(name, age, address); //name, age		
-//	}
-//
+	@Bean
+	@Primary
+	//No qualifying bean of type 'com.in28minutes.learnspringframework.Address' 
+	//available: expected single matching bean but found 2: address2,address3
+	public Person person4Parameters(String name, int age, Address address) {
+		//name,age,address2
+		return new Person(name, age, address); //name, age		
+	}
+
+	@Bean
+	public Person person5Qualifier(String name, int age, @Qualifier("address3qualifier") Address address) {
+		//name,age,address2
+		return new Person(name, age, address); //name, age		
+	}
+
 	
 	@Bean(name = "address2")
 	@Primary

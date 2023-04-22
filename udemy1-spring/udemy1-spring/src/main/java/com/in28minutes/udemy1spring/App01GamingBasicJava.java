@@ -10,6 +10,9 @@ public class App01GamingBasicJava {
 
 	public static void main(String[] args) {
 		
+		// IOC - inversion of control
+		// programmer is explicitly writing code to create objects and 
+		// wire the dependecies
 //		var game = new MarioGame();
 //		var game = new SuperContraGame();
 		

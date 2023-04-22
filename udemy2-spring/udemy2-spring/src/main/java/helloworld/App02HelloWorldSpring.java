@@ -1,4 +1,6 @@
-package com.in28minutes.udemy2spring;
+package helloworld;
+
+import java.util.Arrays;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -7,6 +9,7 @@ public class App02HelloWorldSpring {
 	public static void main(String[] args) {
 
 		//1: Launch a Spring Context
+		// this is try with resources 
 		try(var context = 
 				new AnnotationConfigApplicationContext
 						(HelloWorldConfiguration.class)) {
@@ -32,21 +35,18 @@ public class App02HelloWorldSpring {
 			
 			System.out.println(context.getBean("address2"));
 			
-//			System.out.println(context.getBean(Person.class));
+			System.out.println(context.getBean(Person.class));
 			
 			System.out.println(context.getBean(Address.class));
 			
-//			System.out.println(context.getBean("person5Qualifier"));
+			System.out.println(context.getBean("person5Qualifier"));
 			
 			
 			//System.out.println
 //			Arrays.stream(context.getBeanDefinitionNames())
-//				.forEach(System.out::println);
+//				.forEach(System.out::println);   // to print all the beans name
 			
 		}
-		
-		
-		
 		
 	}
 
