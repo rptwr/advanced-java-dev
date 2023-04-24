@@ -1,0 +1,9 @@
+dev environment
+----------------------
+logging.level.org.springframework=trace
+
+production environment
+------------------------
+logging.level.org.springframework=info
+
+E:\advanced-java-dev\udemy4-springboot\udemy4-springboot\target\udemy4-springboot-0.0.1-SNAPSHOT.jar

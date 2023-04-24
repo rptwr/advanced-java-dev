@@ -1,5 +1,7 @@
 package examples.d1;
 
+// 002 Step 01 - Exploring Lazy and Eager Initialization of Spring Framework Beans
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -49,3 +51,14 @@ public class LazyInitializationLauncherApplication {
 		}
 	}
 }
+
+
+/*
+ After the intialisation of context is completed thats when the bean
+ is loaded 
+ 
+ 
+ 
+ 
+ 
+ */
