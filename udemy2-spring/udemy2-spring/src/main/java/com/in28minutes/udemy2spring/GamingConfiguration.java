@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 import game.GameRunner;
 import game.GamingConsole;
+import game.MarioGame;
 import game.PacmanGame;
 
 @Configuration
@@ -12,11 +13,11 @@ public class GamingConfiguration {
 
 	@Bean
 	public GamingConsole game() {
-		var game = new PacmanGame();
+		var game = new MarioGame();
 		return game;
 	}
 	
-	// we are creating a packmangame and wiring it into gameRunner
+	// we are creating a MarioGame and wiring it into gameRunner
 	@Bean
 	public GameRunner gameRunner(GamingConsole game) {
 		var gameRunner = new GameRunner(game);
