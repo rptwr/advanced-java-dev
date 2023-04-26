@@ -24,7 +24,7 @@ public class XmlConfigurationContextLauncherApplication {
 			
 			context.getBean(GameRunner.class).run();
 
-		}
+		};
 	}
 }
 
